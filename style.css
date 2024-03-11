@@ -1,0 +1,196 @@
+* {
+    
+}
+
+body{
+    display: flex;
+    margin: 0;
+    width: 100vw;
+    background-color:#DDC9B4;
+}
+.topSection{
+    display: flex;
+    box-sizing: border-box;
+}
+.Education{
+
+}
+nav{
+    background-color: #7A6C5D;
+}
+:root{
+    color: black;
+}
+
+.side{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+}
+
+.Personalize{
+    display: block;
+    width: 70%;
+}
+.botPersonalize{
+    display: flex;   
+    width: 100%;
+    justify-content: space-between;
+}
+.botPersonalize > div {
+    width: 40%;
+}
+.jobTable{
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+.Education {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #420C14;
+    padding: 5vh;
+}
+
+.Money {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #420C14;
+    padding: 5vh;
+}
+
+.Other {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #420C14;
+    padding: 5vh;
+}
+
+.table {
+    display:flex;
+    
+}
+
+table tr td {
+    border-style: solid;
+    border-color: black;
+}
+.average {
+    color: red;
+}
+
+.actualTopSection {
+    display: flex;
+    flex-direction: column;
+    border-bottom-color: black;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    padding: 13px;
+    justify-content: space-between;
+    padding-right: 30px;
+}
+
+/* Style The Dropdown Button */
+.dropbtn {
+  background-color: #C17C74;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdownCont > .dropdown {
+    text-decoration: underline;
+}
+.dropdownCont {
+    display: flex;
+    justify-content: space-between;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #C17C74;
+}
+
+
+@media only screen and (max-width: 640px) {
+    .personalize {
+
+    }
+    .Education {
+        visibility: hidden;
+    }
+}
+
+.mincome {
+    background-color: #C17C74;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.oexpenses {
+    background-color: #C17C74;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer; 
+}
+
+.wants{
+    background-color: #FF8989;
+}
+
+.savings {
+    background-color: #FFD089;
+}
+
+.others {
+    background-color: #FFD089;
+}
+
+.necessities {
+    background-color: #AFFF89;
+}
+
+div > h1 {
+    padding: 5%;
+}
+canvas {
+    padding: 5%;
+}
