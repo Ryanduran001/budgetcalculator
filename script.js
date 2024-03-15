@@ -19,7 +19,9 @@ document.addEventListener("DOMContentLoaded"), function () {
         event.preventDefault();
     } 
 
-    form.addEventListener('submit', handleForm);
+    form.addEventListener('submit', handleForm());
+
+    var mincome = document.getElementById("mincome").value;
 
     function getNeccessities(mincome) {
         let income = mincome * 0.667;
@@ -33,4 +35,20 @@ document.addEventListener("DOMContentLoaded"), function () {
         let income = mincome * 0.667;
         return income * 0.2;
     }
+
+
+    let neccessities = documnet.getElementById('neccessities').innerText;
+    let wants = documnet.getElementById('wants').innerText;
+    let savings = documnet.getElementById('savings').innerText;
+
+
+
+
+
+
+
+
+
+
+
 }
