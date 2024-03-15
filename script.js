@@ -39,17 +39,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
         val = val / 12;
 
-        document.getElementById("federalTax").innerText = 'Federal Taxes: $'
-        document.getElementById("stateTax").innerText = 'State Taxes: $'
-        document.getElementById("socialSecurity").innerText = 'Social Security: $'
-        document.getElementById("mediCare").innerText = 'Medicare: $'
-        document.getElementById("stateDisability").innerText = 'State Disability: $'
-        document.getElementById("retirementInvestment").innerText = 'Retirement Investment: $'
+        document.getElementById("federalTax").innerText = 'Federal Taxes (12%): $'
+        document.getElementById("stateTax").innerText = 'State Taxes (7%): $'
+        document.getElementById("socialSecurity").innerText = 'Social Security (6.2%): $'
+        document.getElementById("mediCare").innerText = 'Medicare (1.45%): $'
+        document.getElementById("stateDisability").innerText = 'State Disability (1%): $'
+        document.getElementById("retirementInvestment").innerText = 'Retirement Investment (5%): $'
         document.getElementById("medicalInsurance").innerText = 'Medical Insurance: $'
         document.getElementById("netMonthlyIncome").innerText = 'Net Monthly Income: $'
-        document.getElementById("monthlyNecessities").innerText = 'Montly Necessities: $'
-        document.getElementById("monthlyWants").innerText = 'Monthly Wants: $'
-        document.getElementById("monthlySavings").innerText = 'Monthly Savings: $'
+        document.getElementById("monthlyNecessities").innerText = 'Montly Necessities (50% of Net Monthly): $'
+        document.getElementById("monthlyWants").innerText = 'Monthly Wants (30% of Net Monthly): $'
+        document.getElementById("monthlySavings").innerText = 'Monthly Savings (20% of Net Monthly): $'
         document.getElementById("federalTax").innerText += parseInt(val * 0.12);
         document.getElementById("stateTax").innerText += parseInt(val * 0.07);
         document.getElementById("socialSecurity").innerText += parseInt(val * 0.062);

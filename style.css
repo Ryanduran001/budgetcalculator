@@ -1,15 +1,18 @@
-* {}
+* {
+    
+}
 
 body {
     display: flex;
     margin: 0;
-    width: 100vw;
     background-color: #DDC9B4;
+    overflow-x: none;
 }
 
 .topSection {
     display: flex;
     box-sizing: border-box;
+    flex-flow: row nowrap;
 }
 
 .Education {}
@@ -103,7 +106,6 @@ table tr td {
     border-bottom-width: 2px;
     padding: 13px;
     justify-content: space-between;
-    padding-right: 30px;
 }
 
 /* Style The Dropdown Button */
@@ -166,13 +168,33 @@ table tr td {
 
 
 @media only screen and (max-width: 640px) {
-    .Personalize {
-        display: none;
+    /* .Personalize {
+        display: flex;
+        flex-flow: column wrap;
+    } */
+    .botPersonalize{
+        flex-flow: column wrap;
+        width: 100%;
     }
-
+    .botPersonalize div{
+        width: 100%;
+    }
+    .topSection{
+        flex-flow: row wrap;
+    }
     .side {
         width: 100vw;
         justify-content: center;
+    }
+
+
+    .table {
+        display: flex;
+        flex-flow: column wrap;
+        width: 100vw;
+    }
+    table{
+        width: 100%;
     }
 }
 
