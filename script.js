@@ -12,43 +12,58 @@
 //     },
 //     }
 // );
-document.addEventListener("DOMContentLoaded"), function () {
+document.addEventListener("DOMContentLoaded", function () {
+    // let federalTax = document.getElementById("federalTax").innerText;
+    // let stateTax = document.getElementById("stateTax").innerText;
+    // let socialSecurity = document.getElementById("socialSecurity").innerText;
+    // let mediCare = document.getElementById("mediCare").innerText;
+    // let stateDisability = document.getElementById("stateDisability").innerText;
+    // let retirementInvestment = document.getElementById("retirementInvestment").innerText;
+    // let medicalInsurance = document.getElementById("medicalInsurance").innerText;
+    // let netMonthlyIncome = document.getElementById("netMonthly").innerText;
+    // let monthlyNecessities = document.getElementById("monthlyNecessities").innerText;
+    // let monthlyWants = document.getElementById("monthlyWants").innerText;
+    // let monthlySavings = document.getElementById("monthlySavings").innerText;
+
     var form = document.getElementById("mincome");
 
     function handleForm(event) { 
         event.preventDefault();
     } 
 
-    form.addEventListener('submit', handleForm());
-
-    var mincome = document.getElementById("mincome").value;
-
-    function getNeccessities(mincome) {
-        let income = mincome * 0.667;
-        return income * 0.5;
-    }
-    function getWants(mincome) {
-        let income = mincome * 0.667;
-        return income * 0.3;
-    }
-    function getSavings(mincome) {
-        let income = mincome * 0.667;
-        return income * 0.2;
-    }
+    form.addEventListener('submit', handleForm);
 
 
-    let neccessities = documnet.getElementById('neccessities').innerText;
-    let wants = documnet.getElementById('wants').innerText;
-    let savings = documnet.getElementById('savings').innerText;
+    document.getElementById('mincome').addEventListener('change', function() {
+        let val = parseInt(document.getElementById('mincome').value);
 
+        val = val / 12;
 
+        document.getElementById("federalTax").innerText += parseInt(val * 0.12);
+        document.getElementById("stateTax").innerText += parseInt(val * 0.07);
+        document.getElementById("socialSecurity").innerText += parseInt(val * 0.062);
+        document.getElementById("mediCare").innerText += parseInt(val * 0.0145);
+        document.getElementById("stateDisability").innerText += parseInt(val * 0.01);
+        document.getElementById("retirementInvestment").innerText += parseInt(val * 0.05);
+        document.getElementById("medicalInsurance").innerText += '180';
+        document.getElementById("netMonthlyIncome").innerText += parseInt(val * 0.67);
+        document.getElementById("monthlyNecessities").innerText += parseInt(val * 0.67 * 0.50);
+        document.getElementById("monthlyWants").innerText += parseInt(val * 0.67 * 0.30);
+        document.getElementById("monthlySavings").innerText += parseInt(val * 0.67 * 0.20);
+        
+        return;
+        // you can use number here to edit the .innerText of elements
+        // let federalTax = document.getElementById("federalTax").innerText;
+        // let stateTax = document.getElementById("stateTax").innerText;
+        // let socialSecurity = document.getElementById("socialSecurity").innerText;
+        // let mediCare = document.getElementById("mediCare").innerText;
+        // let stateDisability = document.getElementById("stateDisability").innerText;
+        // let retirementInvestment = document.getElementById("retirementInvestment").innerText;
+        // let medicalInsurance = document.getElementById("medicalInsurance").innerText;
+        // let netMonthlyIncome = document.getElementById("netMonthly").innerText;
+        // let monthlyNecessities = document.getElementById("monthlyNecessities").innerText;
+        // let monthlyWants = document.getElementById("monthlyWants").innerText;
+        // let monthlySavings = document.getElementById("monthlySavings").innerText;
+   });
 
-
-
-
-
-
-
-
-
-}
+})

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Budegt Calculator</title>
     <link rel="stylesheet" href="style.css">
-
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -42,20 +42,14 @@
             </section>
             <section class="Money">
                 <div class="dropdown"></div>
-                <h2>Monthly Income</h2>
-                <p>Type and or figure out your monthly income to document here.</p>
-
-
+                <h2>Yearly Income</h2>
+                <p>Enter your expected yearly income here, please include all sources of income in order to create the most accurate budget possible.</p>
+                <p>Please do not use commas and or decimal points.</p>
                 <section class="mincome">
-                    <label for="mincome">Monthly Income</label>
+                    <label for="mincome">Yearly Income</label>
                     <input type="text" id="mincome" name="mincome">
                     <input type="Submit" value="Submit">
                 </section>
-
-
-
-
-
 
             </section>
             <section class="Other">
@@ -71,7 +65,20 @@
 
             </section>
             <section class="taxes">
-                <
+                <h2>Deductions</h2>
+                <p>**/ENTER YEARLY SALARY FIRST\**</p>
+                <p id="federalTax">Federal Taxes: $</p>
+                <p id="stateTax">State Taxes: $</p>
+                <p id="socialSecurity">Social Security: $</p>
+                <p id="mediCare">Medicare: $</p>
+                <p id="stateDisability">State Disability: $</p>
+                <p id="retirementInvestment">Retirement Investment: $</p>
+                <p id="medicalInsurance">Medical Insurance: $</p>
+                <h2>Monthly Budget</h2>
+                <p id="netMonthlyIncome">Net Monthly Income: $</p>
+                <p id="monthlyNecessities">Montly Necessities: $</p>
+                <p id="monthlyWants">Monthly Wants: $</p>
+                <p id="monthlySavings">Monthly Savings: $</p>
             </section>
         </section>
         <section class="Personalize">
@@ -104,7 +111,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="Housing">
+                    <div class="Housing taxes">
                         <h2>Housing & Necessities</h2>
                         <p>Housing and necessities include house keeping, cleaning, and hygene products.</p>
                         <p>**/NOT FUNCTIONAL\**</p>
@@ -130,16 +137,16 @@
                 </section>
             </section>
             <section class="jobTable">
-                <h2>If you are currently unemployed, here are the average starting salaries and neccessary education for a variety of careers.</h2>
+                <h2 id="tableHeader">If you are currently unemployed, here are the average starting salaries and neccessary education for a variety of careers.</h2>
                 <p class="average">
                     These numbers are accurate to the average STARTING position*
                 </p>
                 <div class="table">
                     <table>
                         <tr>
-                            <th></th>
-                            <th></th>
-                            <th></th>
+                            <th>Career Title</th>
+                            <th>Yearly Salary</th>
+                            <th>Education Req.</th>
                         </tr>
                         <tr>
                             <td>Accountant</td>
@@ -308,6 +315,11 @@
                         </tr>
                     </table>
                     <table>
+                        <tr>
+                            <th>Career Title</th>
+                            <th>Yearly Salary</th>
+                            <th>Education Req.</th>
+                        </tr>
                         <tr>
                             <td>Pastor</td>
                             <td>$70,000.00</td>
@@ -510,9 +522,6 @@
 
             </div>
         </section>
-
-        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-        <script src="script.js"></script>
 
 </body>
 

@@ -67,6 +67,16 @@ nav{
     padding: 5vh;
 }
 
+.taxes {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #420C14;
+    padding: 5vh;
+}
+
+#tableHeader {
+    text-align: center;
+}
 .table {
     display:flex;
     
@@ -146,11 +156,12 @@ table tr td {
 
 
 @media only screen and (max-width: 640px) {
-    .personalize {
-
+    .Personalize {
+        display: none;
     }
-    .Education {
-        visibility: hidden;
+    .side {
+        width: 100vw;
+        justify-content: center;
     }
 }
 
@@ -174,18 +185,22 @@ table tr td {
 
 .wants{
     background-color: #FF8989;
+    display: none;
 }
 
 .savings {
     background-color: #FFD089;
+    display: none;
 }
 
 .others {
     background-color: #FFD089;
+    display: none;
 }
 
 .necessities {
     background-color: #AFFF89;
+    display: none;
 }
 
 div > h1 {
