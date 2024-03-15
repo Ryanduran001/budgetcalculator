@@ -27,14 +27,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var form = document.getElementById("mincome");
 
-    function handleForm(event) { 
+    function handleForm(event) {
         event.preventDefault();
-    } 
+    }
 
     form.addEventListener('submit', handleForm);
 
 
-    document.getElementById('mincome').addEventListener('change', function() {
+    document.getElementById('mincome').addEventListener('change', function () {
         let val = parseInt(document.getElementById('mincome').value);
 
         val = val / 12;
@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("monthlyNecessities").innerText += parseInt(val * 0.67 * 0.50);
         document.getElementById("monthlyWants").innerText += parseInt(val * 0.67 * 0.30);
         document.getElementById("monthlySavings").innerText += parseInt(val * 0.67 * 0.20);
-        
+
         return;
         // you can use number here to edit the .innerText of elements
         // let federalTax = document.getElementById("federalTax").innerText;
@@ -75,6 +75,6 @@ document.addEventListener("DOMContentLoaded", function () {
         // let monthlyNecessities = document.getElementById("monthlyNecessities").innerText;
         // let monthlyWants = document.getElementById("monthlyWants").innerText;
         // let monthlySavings = document.getElementById("monthlySavings").innerText;
-   });
+    });
 
 })

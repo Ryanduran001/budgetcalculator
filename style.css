@@ -1,46 +1,49 @@
-* {
-    
-}
+* {}
 
-body{
+body {
     display: flex;
     margin: 0;
     width: 100vw;
-    background-color:#DDC9B4;
+    background-color: #DDC9B4;
 }
-.topSection{
+
+.topSection {
     display: flex;
     box-sizing: border-box;
 }
-.Education{
 
-}
-nav{
+.Education {}
+
+nav {
     background-color: #7A6C5D;
 }
-:root{
+
+:root {
     color: black;
 }
 
-.side{
+.side {
     display: flex;
     flex-direction: column;
     width: 30vw;
 }
 
-.Personalize{
+.Personalize {
     display: block;
     width: 70%;
 }
-.botPersonalize{
-    display: flex;   
+
+.botPersonalize {
+    display: flex;
     width: 100%;
     justify-content: space-between;
 }
-.botPersonalize > div {
+
+.botPersonalize>div {
     width: 40%;
 }
-.jobTable{
+
+.jobTable {
     display: flex;
     align-items: center;
     flex-flow: column wrap;
@@ -77,15 +80,17 @@ nav{
 #tableHeader {
     text-align: center;
 }
+
 .table {
-    display:flex;
-    
+    display: flex;
+
 }
 
 table tr td {
     border-style: solid;
     border-color: black;
 }
+
 .average {
     color: red;
 }
@@ -103,55 +108,60 @@ table tr td {
 
 /* Style The Dropdown Button */
 .dropbtn {
-  background-color: #C17C74;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
+    background-color: #C17C74;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
 }
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
-  position: relative;
-  display: inline-block;
+    position: relative;
+    display: inline-block;
 }
-.dropdownCont > .dropdown {
+
+.dropdownCont>.dropdown {
     text-decoration: underline;
 }
+
 .dropdownCont {
     display: flex;
     justify-content: space-between;
 }
+
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
-  display: block;
+    display: block;
 }
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
-  background-color: #C17C74;
+    background-color: #C17C74;
 }
 
 
@@ -159,6 +169,7 @@ table tr td {
     .Personalize {
         display: none;
     }
+
     .side {
         width: 100vw;
         justify-content: center;
@@ -180,10 +191,10 @@ table tr td {
     padding: 16px;
     font-size: 16px;
     border: none;
-    cursor: pointer; 
+    cursor: pointer;
 }
 
-.wants{
+.wants {
     background-color: #FF8989;
     display: none;
 }
@@ -203,9 +214,10 @@ table tr td {
     display: none;
 }
 
-div > h1 {
+div>h1 {
     padding: 5%;
 }
+
 canvas {
     padding: 5%;
 }
