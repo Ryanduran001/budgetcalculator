@@ -39,6 +39,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
         val = val / 12;
 
+        document.getElementById("federalTax").innerText = 'Federal Taxes: $'
+        document.getElementById("stateTax").innerText = 'State Taxes: $'
+        document.getElementById("socialSecurity").innerText = 'Social Security: $'
+        document.getElementById("mediCare").innerText = 'Medicare: $'
+        document.getElementById("stateDisability").innerText = 'State Disability: $'
+        document.getElementById("retirementInvestment").innerText = 'Retirement Investment: $'
+        document.getElementById("medicalInsurance").innerText = 'Medical Insurance: $'
+        document.getElementById("netMonthlyIncome").innerText = 'Net Monthly Income: $'
+        document.getElementById("monthlyNecessities").innerText = 'Montly Necessities: $'
+        document.getElementById("monthlyWants").innerText = 'Monthly Wants: $'
+        document.getElementById("monthlySavings").innerText = 'Monthly Savings: $'
         document.getElementById("federalTax").innerText += parseInt(val * 0.12);
         document.getElementById("stateTax").innerText += parseInt(val * 0.07);
         document.getElementById("socialSecurity").innerText += parseInt(val * 0.062);
